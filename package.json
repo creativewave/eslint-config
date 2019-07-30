@@ -1,0 +1,23 @@
+{
+    "name": "@cdoublev/eslint-config",
+    "description": "ESLint configurations",
+    "author": "Guillaume Lebas",
+    "license": "MIT",
+    "keywords": [
+      "eslint",
+      "eslintconfig"
+    ],
+    "version": "0.1.0",
+    "homepage": "https://github.com/creativewave/eslint-config",
+    "bugs": "https://github.com/creativewave/eslint-config/issues",
+    "repository": "github:creativewave/eslint-config",
+    "peerDependencies": {
+        "eslint": ">= 6",
+        "eslint-plugin-compat": ">= 3",
+        "eslint-plugin-react": ">= 7",
+        "eslint-plugin-react-hooks": ">= 1"
+    },
+    "publishConfig": {
+      "access": "public"
+    }
+  }
