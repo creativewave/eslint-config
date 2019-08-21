@@ -55,7 +55,7 @@ module.exports = {
         'object-curly-spacing': ['warn', 'always'],
         'object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
         'operator-assignment': 'warn',
-        'operator-linebreak': ['warn', 'before'],
+        'operator-linebreak': ['warn', 'before', { overrides: { '=': 'after' } }],
         'quotes': ['warn', 'single', { avoidEscape: true }],
         'semi': ['warn', 'never'],
         'sort-keys': 'warn',
