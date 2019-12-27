@@ -12,7 +12,9 @@
   "bugs": "https://github.com/creativewave/eslint-config/issues",
   "repository": "github:creativewave/eslint-config",
   "peerDependencies": {
-    "eslint": ">= 6",
+    "eslint": ">= 6"
+  },
+  "optionalDependencies": {
     "eslint-plugin-compat": ">= 3",
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 1"
