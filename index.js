@@ -7,7 +7,6 @@ module.exports = {
         ecmaVersion: 2019,
         sourceType: 'module',
     },
-    plugins: ['compat'],
     rules: {
         // Best practices
         'dot-location': ['warn', 'property'],
@@ -83,7 +82,5 @@ module.exports = {
         'sort-imports': 'warn',
         'template-curly-spacing': 'warn',
         'yield-star-spacing': 'warn',
-        // Plugins
-        'compat/compat': 'warn',
     },
 }
