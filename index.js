@@ -1,10 +1,9 @@
 
 module.exports = {
-    env: { es6: true },
+    env: { es2020: true },
     extends: ['eslint:recommended'],
     parserOptions: {
         ecmaFeatures: { impliedStrict: true },
-        ecmaVersion: 2019,
         sourceType: 'module',
     },
     rules: {
