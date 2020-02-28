@@ -1,6 +1,5 @@
 
 module.exports = {
-    env: { browser: true, jest: true },
     extends: ['@cdoublev/eslint-config', '@cdoublev/eslint-config/browser', 'plugin:react/recommended'],
     parserOptions: {
         ecmaFeatures: { jsx: true },
