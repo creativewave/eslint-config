@@ -16,9 +16,9 @@ module.exports = {
         // 'no-magic-numbers': 'warn', <- Prevents using default value for destructured object properties
         'no-multi-spaces': ['warn', {
             'exceptions': {
-                'ImportDeclaration': true,
-                'Property': true,
-                'VariableDeclarator': true,
+                ImportDeclaration: true,
+                Property: true,
+                VariableDeclarator: true,
             }
         }],
         'no-sequences': 'warn',
