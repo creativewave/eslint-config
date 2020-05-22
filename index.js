@@ -12,8 +12,6 @@ module.exports = {
         'dot-notation': 'warn',
         'no-else-return': 'warn',
         'no-floating-decimal': 'warn',
-        'no-loop-func': 'warn',
-        // 'no-magic-numbers': 'warn', <- Prevents using default value for destructured object properties
         'no-multi-spaces': ['warn', {
             'exceptions': {
                 ImportDeclaration: true,
@@ -36,24 +34,29 @@ module.exports = {
         'eol-last': 'warn',
         'func-call-spacing': 'warn',
         'func-names': ['warn', 'as-needed'],
-        // 'function-paren-newline': ['warn', 'consistent'], <- Prevents clarity, most of the time.
+        'func-style': ['warn', 'declaration', { allowArrowFunctions: true }],
+        'function-call-argument-newline': ['warn', 'consistent'],
         'indent': ['warn', 4, { MemberExpression: 'off', SwitchCase: 1 }],
+        'jsx-quotes': 'warn',
         'key-spacing': ['warn', { mode: 'minimum' }],
         'keyword-spacing': 'warn',
         'linebreak-style': 'warn',
-        // 'max-len': 'warn', <- Too hard to respect, even with 120 characters.`
         'max-params': ['warn', { 'max': 4 }],
-        // 'new-cap': 'warn', <- Prevents calling a module method, eg. `return Maybe.Just('...')`
+        'multiline-comment-style': 'warn',
+        'new-cap': ['warn', { newIsCap: true, properties: true }],
         'new-parens': 'warn',
         'no-lonely-if': 'warn',
         'no-mixed-operators': 'warn',
         'no-negated-condition': 'warn',
         'no-trailing-spaces': 'warn',
+        'no-whitespace-before-property': 'warn',
         'object-curly-newline': 'warn',
         'object-curly-spacing': ['warn', 'always'],
         'object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
         'operator-assignment': 'warn',
         'operator-linebreak': ['warn', 'before', { overrides: { '=': 'after' } }],
+        'prefer-object-spread': 'warn',
+        'quote-props': ['warn', 'consistent-as-needed'],
         'quotes': ['warn', 'single', { avoidEscape: true }],
         'semi': ['warn', 'never'],
         'sort-keys': 'warn',
