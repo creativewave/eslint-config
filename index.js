@@ -43,7 +43,7 @@ module.exports = {
         'linebreak-style': 'warn',
         'max-params': ['warn', { 'max': 4 }],
         'multiline-comment-style': 'warn',
-        'new-cap': ['warn', { newIsCap: true, properties: true }],
+        'new-cap': ['warn', { capIsNew: false, properties: true }],
         'new-parens': 'warn',
         'no-lonely-if': 'warn',
         'no-mixed-operators': 'warn',
