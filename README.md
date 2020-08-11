@@ -3,7 +3,7 @@
 
 **How to use a configuration:**
 
-Append its identifier to the `extend` property of the ESLint configuration file:
+Append its identifier to the `extends` property of the ESLint configuration file:
 
 - `@cdoublev/eslint-config`: to lint (ES6+) files used everywhere (extended by all configurations below)
 - `@cdoublev/eslint-config/node`: to lint files executed in NodeJS
