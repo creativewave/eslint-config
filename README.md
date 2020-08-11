@@ -8,6 +8,7 @@ Append its identifier to the `extends` property of the ESLint configuration file
 - `@cdoublev/eslint-config`: to lint (ES6+) files used everywhere (extended by all configurations below)
 - `@cdoublev/eslint-config/node`: to lint files executed in NodeJS
 - `@cdoublev/eslint-config/browser`: to lint files executed in a browser
+- `@cdoublev/eslint-config/jest`: to lint files executed in Jest
 - `@cdoublev/eslint-config/react`: to lint React files executed in a browser
 - `@cdoublev/eslint-config/react-ssr`: to lint React files executed both in a browser and NodeJS
 
@@ -18,6 +19,8 @@ Append its identifier to the `extends` property of the ESLint configuration file
 [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) is used to add rules specific to NodeJS, that was removed in ESLint in v7.
 
 [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) are used to add rules specific to `react`.
+
+[`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest/) is used to add rules specific to `jest`.
 
 **How rules are selected?**
 
