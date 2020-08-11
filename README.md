@@ -10,7 +10,29 @@ Append its identifier to the `extends` property of the ESLint configuration file
 - `@cdoublev/eslint-config/browser`: to lint files executed in a browser
 - `@cdoublev/eslint-config/jest`: to lint files executed in Jest
 - `@cdoublev/eslint-config/react`: to lint React files executed in a browser
-- `@cdoublev/eslint-config/react-ssr`: to lint React files executed both in a browser and NodeJS
+
+For example, in a React application rendered server side and tested with Jest:
+
+```js
+// .eslintrc.js
+module.exports = {
+    extends: ['@cdoublev/eslint-config'],
+    overrides: [
+        {
+            files: ['__mocks__/**/*.js', '__tests__/**/*.js'],
+            extends: ['@cdoublev/eslint-config/jest'],
+        },
+        {
+            files: ['server/**/*.js'],
+            extends: ['@cdoublev/eslint-config/node'],
+        },
+        {
+            files: ['src/**/*.js'],
+            extends: ['@cdoublev/eslint-config/react'],
+        },
+    ],
+}
+```
 
 **Optional dependencies:**
 
