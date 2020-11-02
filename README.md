@@ -9,7 +9,7 @@ Append its identifier to the `extends` property of the ESLint configuration file
 - `@cdoublev/eslint-config/node`: to lint files executed in NodeJS
 - `@cdoublev/eslint-config/browser`: to lint files executed in a browser
 - `@cdoublev/eslint-config/jest`: to lint files executed in Jest
-- `@cdoublev/eslint-config/react`: to lint React files executed in a browser
+- `@cdoublev/eslint-config/react`: to lint files executed by React
 
 For example, in a React application rendered server side and tested with Jest:
 
