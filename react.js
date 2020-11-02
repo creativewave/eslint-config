@@ -2,7 +2,6 @@
 module.exports = {
     extends: [
         '@cdoublev/eslint-config',
-        '@cdoublev/eslint-config/browser',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
     ],
