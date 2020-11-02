@@ -16,21 +16,21 @@ For example, in a React application rendered server side and tested with Jest:
 ```js
 // .eslintrc.js
 module.exports = {
-    extends: ['@cdoublev/eslint-config'],
-    overrides: [
-        {
-            files: ['__mocks__/**/*.js', '__tests__/**/*.js'],
-            extends: ['@cdoublev/eslint-config/jest'],
-        },
-        {
-            files: ['server/**/*.js'],
-            extends: ['@cdoublev/eslint-config/node'],
-        },
-        {
-            files: ['src/**/*.js'],
-            extends: ['@cdoublev/eslint-config/react'],
-        },
-    ],
+  extends: ['@cdoublev/eslint-config'],
+  overrides: [
+    {
+      files: ['__mocks__/**/*.js', '__tests__/**/*.js'],
+      extends: ['@cdoublev/eslint-config/node', '@cdoublev/eslint-config/jest'],
+    },
+    {
+      files: ['server/**/*.js'],
+      extends: ['@cdoublev/eslint-config/node'],
+    },
+    {
+      files: ['src/**/*.js'],
+      extends: ['@cdoublev/eslint-config/react'],
+    },
+  ],
 }
 ```
 
