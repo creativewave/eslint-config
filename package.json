@@ -7,7 +7,7 @@
     "eslint",
     "eslintconfig"
   ],
-  "version": "0.7.0",
+  "version": "0.8.0",
   "homepage": "https://github.com/creativewave/eslint-config",
   "bugs": "https://github.com/creativewave/eslint-config/issues",
   "repository": "github:creativewave/eslint-config",
@@ -22,5 +22,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "eslint-plugin-compat": ">= 3",
+    "eslint-plugin-node": ">=11",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 1"
   }
 }
