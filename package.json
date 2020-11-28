@@ -7,7 +7,7 @@
     "eslint",
     "eslintconfig"
   ],
-  "version": "0.8.0",
+  "version": "0.8.1",
   "homepage": "https://github.com/creativewave/eslint-config",
   "bugs": "https://github.com/creativewave/eslint-config/issues",
   "repository": "github:creativewave/eslint-config",
