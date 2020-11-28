@@ -26,7 +26,7 @@ module.exports = {
         'array-element-newline': ['warn', 'consistent'],
         'block-spacing': 'warn',
         'brace-style': 'warn',
-        'camelcase': 'warn',
+        'camelcase': ['warn', { ignoreGlobals: true, ignoreImports: true }],
         'comma-dangle': ['warn', 'always-multiline'],
         'comma-spacing': 'warn',
         'comma-style': 'warn',
