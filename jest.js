@@ -4,6 +4,7 @@ module.exports = {
     extends: ['@cdoublev/eslint-config', 'plugin:jest/recommended'],
     rules: {
         'jest/consistent-test-it': ['warn', { fn: 'it' }],
+        'jest/expect-expect': ['warn', { assertFunctionNames: ['expect*'] }],
         'jest/lowercase-name': ['warn', { ignore: ['describe'] }],
         'jest/no-alias-methods': 'warn',
         'jest/no-deprecated-functions': 'warn',
