@@ -22,11 +22,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "eslint-plugin-compat": ">= 3",
-    "eslint-plugin-node": ">=11",
-    "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 1"
   }
 }
