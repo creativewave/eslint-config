@@ -5,11 +5,11 @@
 
 Append its identifier to the `extends` property of the ESLint configuration file:
 
-- `@cdoublev/eslint-config`: to lint (ES6+) files used everywhere (extended by all configurations below)
-- `@cdoublev/eslint-config/node`: to lint files executed in NodeJS
-- `@cdoublev/eslint-config/browser`: to lint files executed in a browser
-- `@cdoublev/eslint-config/jest`: to lint files executed in Jest
-- `@cdoublev/eslint-config/react`: to lint files executed in React
+  - `@cdoublev/eslint-config` (extended by all configurations below): to lint (ES6+) files executed anywhere
+  - `@cdoublev/eslint-config/node`: to lint files executed in NodeJS
+  - `@cdoublev/eslint-config/browser`: to lint files executed in a browser
+  - `@cdoublev/eslint-config/jest`: to lint files executed in Jest
+  - `@cdoublev/eslint-config/react`: to lint files executed in React
 
 For example, in a React application rendered server side and tested with Jest:
 
@@ -36,22 +36,26 @@ module.exports = {
 
 **Optional dependencies:**
 
-[`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat) is used to detect and report usage of unsupported `browser` interfaces that should be listed in `settings.polyfills` in the ESLint project configuration file, in order to fix related warning(s).
+The following dependencies can be required depending on the configuration.
 
-[`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) is used to add rules specific to NodeJS, that was removed in ESLint in v7.
+[`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat) is required when using `@cdoublev/eslint-config/browser`. It provides rules warning against the use of unsupported `browser` interfaces. These warnings can be muted by listing the corresponding interfaces in `settings.polyfills` in the ESLint project configuration file.
 
-[`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) are used to add rules specific to `react`.
+[`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) is required when using `@cdoublev/eslint-config/node`. It provides specific NodeJS rules.
 
-[`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest/) is used to add rules specific to `jest`.
+[`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) are required when using `@cdoublev/eslint-config/react`. They provide specific `react` rules.
+
+[`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest/) is required when using `@cdoublev/eslint-config/jest`. It provides specific `jest` rules.
 
 **How rules are selected?**
 
-Set up a linter to detect as many errors as possible is often counterproductive: the runtime and unit/integration tests are already detecting errors which can be easily fixed, and an infinite number of error situations might exist and be suitable for adding (an infinite number of) new rules. Therefore selected rules:
+The following conventions apply for selecting rules:
 
-- should not be already in eslint:recommended or plugin:[plugin-name]/recommended
-- should be as few as possible to detect errors
-- should be otherwise related to spacing, line breaks, code clarity, and (performance) optimization
-- should not prevent code clarity
-- should be widely accepted by the JS community
+  - they must not already be included in `eslint:recommended` or `plugin:[plugin-name]/recommended`
+  - they must be as few as possible to detect errors
+  - they must be otherwise related to spacing, line breaks, code clarity, and (performance) optimization
+  - they must not prevent code clarity
+  - they must be widely accepted by the JS community
+
+Configuring a linter to detect as many errors as possible is often counterproductive: the runtime and unit/integration tests are already responsible for this.
 
 This [document](https://docs.google.com/spreadsheets/d/1yPd3sRYB1A81YxMk06ckDMLhZgFYyO66Z0gIVhITBgQ/) provides some comments about each rule. If a rule exists in this document and is not activated, it will never be.
