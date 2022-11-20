@@ -41,6 +41,7 @@ module.exports = {
         'key-spacing': ['warn', { mode: 'minimum' }],
         'keyword-spacing': 'warn',
         'linebreak-style': 'warn',
+        'logical-assignment-operators': 'warn',
         'max-params': ['warn', { 'max': 4 }],
         'multiline-comment-style': 'warn',
         'new-cap': ['warn', { capIsNew: false, properties: true }],
