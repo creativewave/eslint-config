@@ -58,7 +58,6 @@ module.exports = {
         'quotes': ['warn', 'single', { avoidEscape: true }],
         'semi': ['warn', 'never'],
         'sort-keys': 'warn',
-        'sort-vars': 'warn',
         'space-before-blocks': 'warn',
         'space-before-function-paren': ['warn', { named: 'never' }],
         'space-in-parens': 'warn',
