@@ -1,6 +1,6 @@
 
 module.exports = {
-    env: { es2022: true },
+    env: { es2024: true },
     extends: ['eslint:recommended'],
     parserOptions: {
         ecmaFeatures: { impliedStrict: true },
