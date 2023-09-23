@@ -76,7 +76,6 @@ module.exports = {
         'object-shorthand': 'warn',
         'prefer-arrow-callback': 'warn',
         'prefer-const': ['warn', { destructuring: 'all' }],
-        'prefer-destructuring': 'warn',
         'prefer-template': 'warn',
         'rest-spread-spacing': 'warn',
         'sort-imports': 'warn',
