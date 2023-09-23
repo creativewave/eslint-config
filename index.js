@@ -32,7 +32,6 @@ module.exports = {
         'computed-property-spacing': 'warn',
         'eol-last': 'warn',
         'func-call-spacing': 'warn',
-        'func-names': ['warn', 'as-needed'],
         'func-style': ['warn', 'declaration', { allowArrowFunctions: true }],
         'function-call-argument-newline': ['warn', 'consistent'],
         'indent': ['warn', 4, { MemberExpression: 'off', SwitchCase: 1 }],
