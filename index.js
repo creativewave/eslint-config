@@ -54,7 +54,6 @@ module.exports = {
         'object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
         'operator-assignment': 'warn',
         'operator-linebreak': ['warn', 'before', { overrides: { '=': 'after' } }],
-        'prefer-object-spread': 'warn',
         'quote-props': ['warn', 'consistent-as-needed'],
         'quotes': ['warn', 'single', { avoidEscape: true }],
         'semi': ['warn', 'never'],
