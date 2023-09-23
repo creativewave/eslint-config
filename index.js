@@ -18,7 +18,6 @@ module.exports = {
                 VariableDeclarator: true,
             }
         }],
-        'no-sequences': 'warn',
         // Stylistic issues
         'array-bracket-newline': ['warn', 'consistent'],
         'array-bracket-spacing': 'warn',
