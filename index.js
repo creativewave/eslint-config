@@ -9,7 +9,6 @@ module.exports = {
     rules: {
         // Best practices
         'dot-location': ['warn', 'property'],
-        'dot-notation': 'warn',
         'no-else-return': 'warn',
         'no-floating-decimal': 'warn',
         'no-multi-spaces': ['warn', {
