@@ -73,7 +73,6 @@ module.exports = {
         'arrow-spacing': 'warn',
         'generator-star-spacing': ['warn', 'after'],
         'no-duplicate-imports': 'warn',
-        'no-useless-computed-key': 'warn',
         'object-shorthand': 'warn',
         'prefer-arrow-callback': 'warn',
         'prefer-const': ['warn', { destructuring: 'all' }],
