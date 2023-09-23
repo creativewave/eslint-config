@@ -6,7 +6,6 @@ module.exports = {
         'jest/expect-expect': ['warn', { assertFunctionNames: ['expect*'] }],
         'jest/no-alias-methods': 'warn',
         'jest/no-deprecated-functions': 'warn',
-        'jest/no-duplicate-hooks': 'warn',
         'jest/prefer-comparison-matcher': 'warn',
         'jest/prefer-equality-matcher': 'warn',
         'jest/prefer-lowercase-title': ['warn', { ignore: ['describe'] }],
