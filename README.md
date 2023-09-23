@@ -36,15 +36,12 @@ module.exports = {
 
 **Optional dependencies:**
 
-The following dependencies can be required depending on the configuration.
+The following dependencies may be required depending on the configuration.
 
-[`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat) is required when using `@cdoublev/eslint-config/browser`. It provides rules warning against the use of unsupported `browser` interfaces. These warnings can be muted by listing the corresponding interfaces in `settings.polyfills` in the ESLint project configuration file.
-
-[`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) is required when using `@cdoublev/eslint-config/node`. It provides specific NodeJS rules.
-
-[`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) are required when using `@cdoublev/eslint-config/react`. They provide specific `react` rules.
-
-[`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest/) is required when using `@cdoublev/eslint-config/jest`. It provides specific `jest` rules.
+  - [`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat) is required for `@cdoublev/eslint-config/browser` and warns against the use of unsupported `browser` interfaces (these warnings can be muted by listing the corresponding interfaces in `settings.polyfills` in the ESLint configuration file of the project)
+  - [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) is required for `@cdoublev/eslint-config/node`
+  - [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) are required for `@cdoublev/eslint-config/react`
+  - [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest/) is required for `@cdoublev/eslint-config/jest`
 
 **How rules are selected?**
 
@@ -56,6 +53,6 @@ The following conventions apply for selecting rules:
   - they must not prevent code clarity
   - they must be widely accepted by the JS community
 
-Configuring a linter to detect as many errors as possible is often counterproductive: the runtime and unit/integration tests are already responsible for this.
+Configuring a linter to detect as many errors as possible is often counterproductive: the runtime and tests are already responsible for this.
 
 This [document](https://docs.google.com/spreadsheets/d/1yPd3sRYB1A81YxMk06ckDMLhZgFYyO66Z0gIVhITBgQ/) provides some comments about each rule. If a rule exists in this document and is not activated, it will never be.
