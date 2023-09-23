@@ -79,7 +79,7 @@ module.exports = {
         'no-useless-computed-key': 'warn',
         'object-shorthand': 'warn',
         'prefer-arrow-callback': 'warn',
-        'prefer-const': 'warn',
+        'prefer-const': ['warn', { destructuring: 'all' }],
         'prefer-destructuring': 'warn',
         'prefer-template': 'warn',
         'rest-spread-spacing': 'warn',
