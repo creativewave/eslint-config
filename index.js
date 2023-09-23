@@ -50,6 +50,7 @@ module.exports = {
         'no-mixed-operators': 'warn',
         'no-negated-condition': 'warn',
         'no-trailing-spaces': 'warn',
+        'no-unused-vars': ['warn', { ignoreRestSiblings: true }],
         'no-whitespace-before-property': 'warn',
         'object-curly-newline': 'warn',
         'object-curly-spacing': ['warn', 'always'],
