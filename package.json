@@ -16,7 +16,7 @@
   },
   "optionalDependencies": {
     "eslint-plugin-compat": ">= 6",
-    "eslint-plugin-jest": ">= 27",
+    "eslint-plugin-jest": ">= 28",
     "eslint-plugin-node": ">=11",
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4"
