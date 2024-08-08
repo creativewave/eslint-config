@@ -11,18 +11,24 @@
   "homepage": "https://github.com/creativewave/eslint-config",
   "bugs": "https://github.com/creativewave/eslint-config/issues",
   "repository": "github:creativewave/eslint-config",
-  "peerDependencies": {
-    "eslint": ">= 8"
+  "exports": {
+    ".": "./index.js",
+    "./browser": "./browser.js",
+    "./node": "./node.js",
+    "./react": "./react.js",
+    "./jest": "./jest.js"
   },
-  "dependencies": {
-    "@stylistic/eslint-plugin-js": ">= 2"
+  "peerDependencies": {
+    "eslint": ">= 9"
   },
   "optionalDependencies": {
+    "@stylistic/eslint-plugin-js": ">= 2",
     "eslint-plugin-compat": ">= 6",
     "eslint-plugin-jest": ">= 28",
     "eslint-plugin-n": ">=17",
     "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 5"
+    "eslint-plugin-react-hooks": ">= 5.1.0-rc-65903583-20240805",
+    "globals": ">= 15"
   },
   "publishConfig": {
     "access": "public"

@@ -1,7 +1,11 @@
 
+const { node: globals } = require('globals')
+const n = require('eslint-plugin-n')
+
 module.exports = {
-    env: { node: true },
-    extends: ['@cdoublev/eslint-config'],
+    languageOptions: { globals },
+    name: '@cdoublev/eslint-config/node',
+    plugins: { n },
     rules: {
         'n/file-extension-in-import': 'warn',
         'n/no-deprecated-api': 'warn',

@@ -1,7 +1,10 @@
 
+const jest = require('eslint-plugin-jest')
+
 module.exports = {
-    env: { jest: true },
-    extends: ['@cdoublev/eslint-config'],
+    files: ['__tests__/**/*.js', 'tests/**/*.js', '**/*.test.js'],
+    name: '@cdoublev/eslint-config/jest',
+    plugins: { jest },
     rules: {
         'jest/expect-expect': ['warn', { assertFunctionNames: ['expect*'] }],
         'jest/no-commented-out-tests': 'warn',

@@ -1,10 +1,11 @@
 
+const react = require('eslint-plugin-react')
+const reactHooks = require('eslint-plugin-react-hooks')
+
 module.exports = {
-    extends: ['@cdoublev/eslint-config'],
-    parserOptions: {
-        ecmaFeatures: { jsx: true },
-    },
-    plugins: ['react', 'react-hooks'],
+    languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } },
+    name: '@cdoublev/eslint-config/react',
+    plugins: { react, 'react-hooks': { rules: reactHooks.rules } },
     rules: {
         '@stylistic/js/jsx-quotes': ['warn', 'prefer-single'],
         'react/default-props-match-prop-types': 'warn',

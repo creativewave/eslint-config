@@ -1,9 +1,9 @@
 
+const compat = require('eslint-plugin-compat')
+const { node: globals } = require('globals')
+
 module.exports = {
-    env: { browser: true },
-    extends: ['@cdoublev/eslint-config'],
-    plugins: ['compat'],
-    rules: {
-        'compat/compat': 'warn',
-    },
+    ...compat.configs['flat/recommended'],
+    languageOptions: { globals },
+    name: '@cdoublev/eslint-config/jest',
 }

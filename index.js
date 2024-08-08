@@ -1,10 +1,10 @@
 
+const stylisticJs = require('@stylistic/eslint-plugin-js')
+
 module.exports = {
-    env: { es2024: true },
-    parserOptions: {
-        ecmaFeatures: { impliedStrict: true },
-        sourceType: 'module',
-    },
+    languageOptions: { parserOptions: { ecmaFeatures: { impliedStrict: true } } },
+    name: '@cdoublev/eslint-config',
+    plugins: { '@stylistic/js': stylisticJs },
     rules: {
         // Best practices
         'camelcase': ['warn', { ignoreGlobals: true, ignoreImports: true }],
@@ -44,7 +44,7 @@ module.exports = {
         '@stylistic/js/keyword-spacing': 'warn',
         '@stylistic/js/linebreak-style': 'warn',
         '@stylistic/js/max-statements-per-line': 'warn',
-        '@stylistic/js/multiline-ternary': 'warn',
+        '@stylistic/js/multiline-ternary': ['warn', 'always-multiline'],
         '@stylistic/js/no-floating-decimal': 'warn',
         '@stylistic/js/no-mixed-operators': 'warn',
         '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
