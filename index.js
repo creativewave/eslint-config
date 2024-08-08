@@ -3,6 +3,7 @@ const stylisticJs = require('@stylistic/eslint-plugin-js')
 
 module.exports = {
     languageOptions: { parserOptions: { ecmaFeatures: { impliedStrict: true } } },
+    linterOptions: { reportUnusedDisableDirectives: 'warn' },
     name: '@cdoublev/eslint-config',
     plugins: { '@stylistic/js': stylisticJs },
     rules: {
