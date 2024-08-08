@@ -39,9 +39,9 @@ module.exports = {
 The following dependencies may be required depending on the configuration.
 
   - [`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat) is required for `@cdoublev/eslint-config/browser` and warns against the use of unsupported `browser` interfaces (these warnings can be muted by listing the corresponding interfaces in `settings.polyfills` in the ESLint configuration file of the project)
-  - [`eslint-plugin-node`](https://github.com/mysticatea/eslint-plugin-node) is required for `@cdoublev/eslint-config/node`
+  - [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n) is required for `@cdoublev/eslint-config/node`
   - [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) are required for `@cdoublev/eslint-config/react`
-  - [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest/) is required for `@cdoublev/eslint-config/jest`
+  - [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) is required for `@cdoublev/eslint-config/jest`
 
 **How rules are selected?**
 
