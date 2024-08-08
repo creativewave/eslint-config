@@ -46,6 +46,8 @@ module.exports = {
         'key-spacing': ['warn', { mode: 'minimum' }],
         'keyword-spacing': 'warn',
         'linebreak-style': 'warn',
+        'max-statements-per-line': 'warn',
+        'multiline-ternary': ['warn', 'always-multiline'],
         'no-mixed-spaces-and-tabs': 'warn',
         'no-multi-spaces': ['warn', {
             'exceptions': {
@@ -54,8 +56,11 @@ module.exports = {
                 VariableDeclarator: true,
             }
         }],
+        'no-multiple-empty-lines': 'warn',
+        'no-tabs': 'warn',
         'no-trailing-spaces': 'warn',
         'no-whitespace-before-property': 'warn',
+        'nonblock-statement-body-position': 'warn',
         'object-curly-newline': 'warn',
         'object-curly-spacing': ['warn', 'always'],
         'object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],

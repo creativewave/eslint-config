@@ -20,5 +20,5 @@ module.exports = {
         'jest/valid-expect': 'warn',
         'jest/valid-expect-in-promise': 'warn',
         'jest/valid-title': 'warn',
-    }
+    },
 }
