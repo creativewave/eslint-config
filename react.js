@@ -6,7 +6,7 @@ module.exports = {
     },
     plugins: ['react', 'react-hooks'],
     rules: {
-        'jsx-quotes': ['warn', 'prefer-single'],
+        '@stylistic/js/jsx-quotes': ['warn', 'prefer-single'],
         'react/default-props-match-prop-types': 'warn',
         'react/display-name': 'warn',
         'react/jsx-child-element-spacing': 'warn',
