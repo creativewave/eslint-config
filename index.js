@@ -1,5 +1,5 @@
 
-const stylisticJs = require('@stylistic/eslint-plugin-js')
+const stylisticJs = require('@stylistic/eslint-plugin-js').default
 
 module.exports = {
     languageOptions: { parserOptions: { ecmaFeatures: { impliedStrict: true } } },
