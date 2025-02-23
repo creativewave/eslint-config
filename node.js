@@ -1,9 +1,7 @@
 
-const { node: globals } = require('globals')
 const n = require('eslint-plugin-n')
 
 module.exports = {
-    languageOptions: { globals },
     name: '@cdoublev/eslint-config/node',
     plugins: { n },
     rules: {
