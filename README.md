@@ -31,13 +31,6 @@ module.exports = [
 ]
 ```
 
-The following dependencies may need to be installed depending on the configuration:
-
-  - [`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat) for `@cdoublev/eslint-config/browser`
-  - [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n) for `@cdoublev/eslint-config/node`
-  - [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and [`eslint-plugin-react-hooks`](https://reactjs.org/docs/hooks-rules.html#eslint-plugin) for `@cdoublev/eslint-config/react`
-  - [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) for `@cdoublev/eslint-config/jest`
-
 **How rules are selected?**
 
   - they must be as few as possible to detect errors (tests already exist for this)
