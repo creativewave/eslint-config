@@ -22,7 +22,7 @@
     "eslint": ">= 9"
   },
   "optionalDependencies": {
-    "@stylistic/eslint-plugin-js": ">= 2",
+    "@stylistic/eslint-plugin-js": ">= 4",
     "eslint-plugin-compat": ">= 6",
     "eslint-plugin-jest": ">= 28",
     "eslint-plugin-n": ">=17",
