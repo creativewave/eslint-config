@@ -27,8 +27,7 @@
     "eslint-plugin-jest": ">= 28",
     "eslint-plugin-n": ">=17",
     "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 5.1.0-rc-65903583-20240805",
-    "globals": ">= 15"
+    "eslint-plugin-react-hooks": ">= 5.1.0-rc-65903583-20240805"
   },
   "publishConfig": {
     "access": "public"
